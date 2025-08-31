@@ -5,3 +5,6 @@
 .primary{
     background-color: #5f6FFF;
 }
+::-webkit-scrollbar{
+    @apply hidden
+}
