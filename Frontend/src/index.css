@@ -2,7 +2,7 @@
 .active hr{
     @apply block
 }
-.primary{
+.bg-primary{
     background-color: #5f6FFF;
 }
 ::-webkit-scrollbar{

@@ -15,3 +15,7 @@ const AppContextProvider = (props)=>{
 }
 
 export default AppContextProvider
+
+
+
+//This file is used to give context for assets.js file 
