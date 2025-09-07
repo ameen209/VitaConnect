@@ -10,6 +10,9 @@
 .bg-primary{
     background-color: #5f6FFF;
 }
+.text-primary{
+    color: #5f6FFF;
+}
 ::-webkit-scrollbar{
     @apply hidden
 }
