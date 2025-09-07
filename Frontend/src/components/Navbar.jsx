@@ -14,19 +14,19 @@ const Navbar = () => {
       <ul className='hidden md:flex items-start gap-5 font-medium'>
         <NavLink to='/'>
           <li className='py-1'>HOME</li>
-          <hr style={{backgroundColor: "#5f6FFF"}} className='border-none outline-none h-0.5 w-3/5 m-auto hidden' />
+          <hr className='bg-primary border-none outline-none h-0.5 w-3/5 m-auto hidden' />
         </NavLink>
         <NavLink to='/doctors'>
           <li className='py-1'>ALL DOCTORS</li>
-          <hr style={{backgroundColor: "#5f6FFF"}} className='border-none outline-none h-0.5 w-3/5 m-auto hidden' />
+          <hr className='bg-primary border-none outline-none h-0.5 w-3/5 m-auto hidden' />
         </NavLink>
         <NavLink to='/about'>
           <li className='py-1'>ABOUT</li>
-          <hr style={{backgroundColor: "#5f6FFF"}} className='border-none outline-none h-0.5 w-3/5 m-auto hidden' />
+          <hr className='bg-primary border-none outline-none h-0.5 w-3/5 m-auto hidden' />
         </NavLink>
         <NavLink to='/contact'>
           <li className='py-1'>CONTACT</li>
-          <hr style={{backgroundColor: "#5f6FFF"}} className='border-none outline-none h-0.5 w-3/5 m-auto hidden' />
+          <hr className='bg-primary border-none outline-none h-0.5 w-3/5 m-auto hidden' />
         </NavLink>
       </ul>
       <div className='flex items-center gap-4'>
@@ -43,7 +43,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          : <button onClick={()=>navigate('/login')} style={{backgroundColor:"#5f6FFF"}} className='text-white px-8 py-3 rounded-full font-light hidden md:block'>Create Account</button>
+          : <button onClick={()=>navigate('/login')} className='text-white bg-primary cursor-pointer px-8 py-3 rounded-full font-light hidden md:block'>Create Account</button>
         }
       </div>
     </div>
