@@ -26,8 +26,8 @@ const Footer = () => {
         <div>
             <p className='text-xl font-medium mb-5'>GET IN TOUCH</p>
             <ul className='flex flex-col gap-2 text-gray-600'>
-                <li>+0-000-000-000</li>
-                <li>greatstackdev@gmail.com</li>
+                <li>+91-9753684998</li>
+                <li>ameenhusain47@gmail.com</li>
             </ul>
         </div>
 
@@ -35,7 +35,7 @@ const Footer = () => {
       <div>    
         <hr className='text-gray-200' />
         <p className='py-5 text-sm text-center'>
-            Copyright 2024 @ Greatstack.dev - All Right Reserved.
+            Copyright 2025 @ VitaConnect.dev - All Right Reserved.
         </p>
       </div>
     </div>
