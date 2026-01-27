@@ -7,15 +7,15 @@ import { AppContext } from '../../context/AppContext'
 
 const Dashboard = () => {
 
-  const {aToken, getDashData, cancelAppointment, dashData} = useContext(AdminContext)
+  const { aToken, getDashData, cancelAppointment, dashData } = useContext(AdminContext)
 
-  const {slotDateFormat} = useContext(AppContext)
+  const { slotDateFormat } = useContext(AppContext)
 
-  useEffect(()=>{
-    if(aToken){
+  useEffect(() => {
+    if (aToken) {
       getDashData()
     }
-  },[aToken])
+  }, [aToken])
 
   return dashData && (
     <div className='m-5'>
@@ -55,7 +55,7 @@ const Dashboard = () => {
 
         <div className='pt-4 border border-t-0'>
           {
-            dashData.latestAppointments.map((item,index)=>(
+            dashData.latestAppointments.map((item, index) => (
               <div className='flex items-center px-6 py-3 gap-3 hover:bg-gray-100' key={index}>
                 <img className='rounded-full w-10' src={item.docData.image} alt="" />
                 <div className='flex-1 text-sm'>
@@ -65,7 +65,9 @@ const Dashboard = () => {
                 {
                   item.cancelled
                     ? <p className='text-red-400 text-xs font-medium'>Cancelled</p>
-                    : <img onClick={()=>cancelAppointment(item._id)} className='w-10 cursor-pointer' src={assets.cancel_icon} alt="" />
+                    : item.isCompleted
+                      ? <p className='text-green-500 text-xs font-medium'>Completed</p>
+                      : <img onClick={() => cancelAppointment(item._id)} className='w-10 cursor-pointer' src={assets.cancel_icon} alt="" />
                 }
               </div>
             ))
