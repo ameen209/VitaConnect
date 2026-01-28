@@ -5,7 +5,7 @@ import appointmentModel from "../models/appointmentModel.js";
 
 const changeAvailability = async(req,res)=>{
     try {
-        const docId = req.docId
+        const docId = req.body.docId || req.docId
 
         const docData = await doctorModel.findById(docId)
         await doctorModel.findByIdAndUpdate(docId,{available : !docData.available})
