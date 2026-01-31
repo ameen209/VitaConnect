@@ -34,6 +34,10 @@ const Navbar = () => {
           <li className='py-1'>CONTACT</li>
           <hr className='bg-primary border-none outline-none h-0.5 w-3/5 m-auto hidden' />
         </NavLink>
+        <a href="https://vita-connect-admin-panel.vercel.app/">
+          <p className='py-1 hover:bg-[#5F6FFF] hover:text-gray-100 hover:rounded-md'>Admin Panel</p>
+          <hr className='bg-primary border-none outline-none h-0.5 w-3/5 m-auto hidden' />
+        </a>
       </ul>
       <div className='flex items-center gap-4'>
         {
