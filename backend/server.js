@@ -17,7 +17,8 @@ app.use(cors({
     origin : [
         "http://localhost:5173",
         "http://localhost:5174", 
-        "https://vita-connect.vercel.app/"
+        "https://vita-connect.vercel.app",
+        "https://vita-connect-admin-panel.vercel.app"
     ],
     credentials: true
 }))
